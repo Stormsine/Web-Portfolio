@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            perspective: 1px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__layer--back {
+            transform: translateZ(-1px) scale(2);
+            background-image: url('https://media.tenor.com/r3MeBihAouQAAAAC/cherry-blossom-anime.gif');
+            /* Adjust other background properties as needed */
+        }
+
+        .parallax__layer--base {
+            transform: translateZ(0);
+        }
+
+        /* Adjust the layer speed as needed */
+        .parallax__layer--base img {
+            width: 400%;
+            height: auto;
+            animation: parallax 25s infinite linear;
+        }
+
+        @keyframes parallax {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--back"></div>
+        <div class="parallax__layer parallax__layer--base">
+            <!-- Add your content here -->
+            <h1>Welcome to My Parallax Page</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <style>
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  </style>
+</head>
+<link href="contactf.css" rel="stylesheet" type="text/css"/>
+<link href="homepag.css" rel="stylesheet" type="text/css" />
+<link href="navbar.css" rel="stylesheet" type="text/css" />
+<body>
+  <div class="navigation">
+    <button onclick="option_menu('Home')">Home</button>
+    <button onclick="option_menu('Portfolio')">Portfolio</button>
+    <button onclick="option_menu('Contact')">Contact</button>
+</body>
+  <div id="content">
+    <!-- Add your content here -->
+  </div>
+
+  <script>
+    function option_menu(selected) {
+      if (selected === "Home") {
+        document.getElementById("content").innerHTML = `
+        <div class="parallax-wrapper">
+  <div class="background background--Home">
+    <h2 class="title">Home</h2>
+  </div>
+  <section class="web-desc">
+    <div class="desc-wrapper">
+      <h3 class="web--title">Home</h3>
+      <p class="web--about">h </p>
+    </div>
+  </section>
+  <div class="background background--Passion">
+    <h2 class="title">Passion
+  </h2>
+  </div>
+  <section class="web-desc">
+    <div class="desc-wrapper">
+      <h3 class="web--title">Passion
+    </h3>
+      <p class="web--about"> </p>
+    </div>
+  </section>
+  <div class="background background--History">
+    <h2 class="title">History</h2>
+  </div>
+
+  <section class="web-desc">
+    <div class="desc-wrapper">
+      <h3 class="web--title">History</h3>
+      <p class="web--about"> </p>
+    </div>
+  </section>
+  <div class="background background--Conclusion">
+    <h2 class="title">Conclusion</h2>
+  </div>
+  <section class="web-desc">
+    <div class="desc-wrapper">
+      <h3 class="web--title">Conclusion</h3>
+      <p class="web--about"> </p>
+    </div>
+  </section>
+</div>
+        `;
+      } else if (selected === "Portfolio") {
+        document.getElementById("content").innerHTML = `
+          <div class="parallax" style="background-image: url('<img src="C:/Users/mrsam/Pictures/page_1.JPG" alt="First Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_2.JPG" alt="Second Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_3.JPG" alt="Third Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_4.JPG" alt="Fourth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_5.JPG" alt="Fifth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_6.JPG" alt="Sixth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_7.JPG" alt="Seventh Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_8.JPG" alt="Eighth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_9.JPG" alt="Ninth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_10.JPG" alt="Tenth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_11.JPG" alt="Eleventh Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_12.JPG" alt="Twelfth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_13.JPG" alt="Thirteenth Page" style="width:100%">
+              <img src="C:/Users/mrsam/Pictures/page_14.JPG" alt="Fourteenth Page" style="width:100%">');">
+            <div class="parallax-content">
+              <h1>Portfolio</h1>
+              <p>W</p>
+            </div>
+          </div>
+        `;
+      } else if (selected === "Contact") {
+        document.getElementById("content").innerHTML = `
+        
+        <div class="container">  
+  <form id="contact" action="" method="post">
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+<div class="background">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+  <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+  <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+  <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+  <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+  <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+  <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+  </defs>
+  <!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+  <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+  <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+  <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+  <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+  <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+  <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+  <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+  </rect>-->
+  <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+  <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+  </rect>
+  <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+  </rect>
+  </svg>
+</div>
+        `;
+      }
+    }
+  </script>
